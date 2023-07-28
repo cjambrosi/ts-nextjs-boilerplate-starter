@@ -1,0 +1,6 @@
+{
+  "common": {
+    "btn-label-one": "Alterar o tema para { name }",
+    "btn-label-two": "Alterar o idioma para { lang }"
+  }
+}
