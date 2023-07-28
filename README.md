@@ -15,6 +15,15 @@
 
 ## Contributing
 
+Contributions are welcome! :metal:
+
+Please check out the [CONTRIBUTING.md](CONTRIBUTING.md).
+
+You can also:
+
+- :star2: give a star in this repository
+- :heavy_heart_exclamation: share this project and recommending it to your friends
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->

@@ -1,17 +1,17 @@
 {
-  "name": "cjambrosi.dev",
-  "version": "0.1.0",
+  "name": "ts-nextjs-boilerplate-starter",
+  "version": "1.0.0",
   "private": true,
-  "description": "My personal blog",
+  "description": "Next.js + Styled Components + TypeScript. Boilerplate packed with useful development features.",
   "author": {
     "name": "Cristian J. Ambrosi",
     "url": "https://cjambrosi.dev.br"
   },
-  "homepage": "https://github.com/cjambrosi/cjambrosi.dev#readme",
+  "homepage": "https://github.com/cjambrosi/ts-nextjs-boilerplate-starter#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cjambrosi/cjambrosi.dev.git"
+    "url": "git+https://github.com/cjambrosi/ts-nextjs-boilerplate-starter.git"
   },
   "scripts": {
     "dev": "next dev",
@@ -28,22 +28,26 @@
     "pre-commit": "lint-staged"
   },
   "keywords": [
-    "nextjs",
     "react",
-    "personal",
-    "portfolio",
-    "cjambrosi",
-    "blog",
-    "programmer",
-    "developer",
-    "software engineer",
-    "tutorials",
-    "articles",
-    "development",
-    "software",
-    "computer science",
-    "front-end",
-    "back-end"
+    "boilerplate",
+    "typescript",
+    "eslint",
+    "styled-components",
+    "jest",
+    "nextjs",
+    "boilerplate-template",
+    "prettier",
+    "starter-template",
+    "starter",
+    "storybook",
+    "husky",
+    "commitlint",
+    "absolute-imports",
+    "github-actions",
+    "nextjs-starter",
+    "nextjs-boilerplate",
+    "zustand",
+    "nextjs13"
   ],
   "dependencies": {
     "@types/node": "20.3.1",
