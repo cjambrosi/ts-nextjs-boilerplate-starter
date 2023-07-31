@@ -12,6 +12,62 @@
 
 ## Get started
 
+Brief explanation of how you can use this project.
+
+### Use one of the two options below to clone this repository
+
+1. Using as a template for a new repository. [Read more about template repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+    Click the "Use this template" button and select "Create a new repository", to create your new repository based on this template repository.
+
+    ![repository-template-button](https://github.com/cjambrosi/ts-nextjs-boilerplate-starter/assets/9125404/a1def74a-fec2-4194-b79d-90d9d0850267)
+
+2. Using the CLI tool [create-next-app](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
+    Create your App with this boilerplate directly using the `create-next-app` command:
+
+    ```bash
+    yarn create next-app -e https://github.com/cjambrosi/ts-nextjs-boilerplate-starter app-name
+
+    or
+
+    npx create-next-app -e https://github.com/cjambrosi/ts-nextjs-boilerplate-starter app-name
+    ```
+
+### Install Dependencies and Start App
+
+We recommend using [Yarn](https://yarnpkg.com) as the package manager to ensure the proper functioning of Husky hooks.
+
+Install dependencies:
+
+```bash
+yarn install
+
+or
+
+npm i
+```
+
+Run the App:
+
+```bash
+yarn dev
+
+or
+
+npm run dev
+```
+
+Run the Storybook:
+
+```bash
+yarn storybook
+
+or
+
+npm run storybook
+```
+
 ## Features
 
 ## Contributing
