@@ -1,12 +1,13 @@
 # Next.js + Styled Components + TypeScript - Boilerplate Starter
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <div align="center">
   <h2>ts-nextjs-boilerplate-starter</h2>
   <p>Next.js + Styled Components + TypeScript. Boilerplate packed with useful development features.</p>
   <p>Made by <a href="https://www.linkedin.com/in/cjambrosi" target="_blank">Cristian J. Ambrosi</a></p>
+
+  ![GitHub last commit](https://img.shields.io/github/last-commit/cjambrosi/ts-nextjs-boilerplate-starter?color=%2379C83D&label=Last%20Commit)
+  ![GitHub](https://img.shields.io/github/license/cjambrosi/ts-nextjs-boilerplate-starter?label=Licence)
+  [![All Contributors](https://img.shields.io/badge/all_contributors-1-green.svg?)](#contributors-)
 </div>
 
 ## Get started
