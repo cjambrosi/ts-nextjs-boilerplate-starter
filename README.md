@@ -73,7 +73,7 @@ npm run storybook
 This boilerplate comes packaged with:
 
 - [Next.js v13](https://nextjs.org)
-- [ReactJS v18](https://react.dev)
+- [React.js v18](https://react.dev)
 - [TypeScript](https://www.typescriptlang.org)
 - [Styled Components](https://styled-components.com) — Make components using css-in-js
 - [Zustand](https://zustand-demo.pmnd.rs) — A powerful and simple state manager. You can even use the [Context API](https://react.dev/learn/passing-data-deeply-with-context)
@@ -82,7 +82,7 @@ This boilerplate comes packaged with:
 - [ESLint](https://eslint.org) — Find and fix problems in your code, also will auto sort your imports
 - [Prettier](https://prettier.io) — Format your code consistently
 - [Husky](https://typicode.github.io/husky) & [Lint Staged](https://github.com/okonet/lint-staged) — Run scripts in staged files before they are committed
-- [Conventional Commit Lint](https://commitlint.js.org) — Certifique-se de que você e seus colegas de equipe sigam o compromisso convencional
+- [Conventional Commit Lint](https://commitlint.js.org) — Make sure you and your teammates follow conventional commit
 - [Storybook](https://storybook.js.org) — Document your components intelligently and interactively
 
 ## Contributing
