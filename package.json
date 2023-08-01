@@ -29,6 +29,7 @@
   },
   "keywords": [
     "react",
+    "i18n",
     "boilerplate",
     "typescript",
     "eslint",
@@ -43,6 +44,7 @@
     "husky",
     "commitlint",
     "absolute-imports",
+    "internacionalization",
     "github-actions",
     "nextjs-starter",
     "nextjs-boilerplate",
