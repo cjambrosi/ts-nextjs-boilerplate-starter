@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Download deps
+      - name: Download dependencies
         uses: u0reo/npm-install@fix/restore-failure
         with:
           useRollingCache: true
