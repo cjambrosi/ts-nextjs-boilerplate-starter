@@ -18,12 +18,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --pretty --noEmit",
+    "lint:fix": "eslint src --fix && yarn format",
+    "lint:strict": "eslint --max-warnings=0 src",
+    "typecheck": "tsc --pretty --noEmit",
     "test": "jest --maxWorkers=50% --silent",
     "test:unit": "jest --watch",
     "test:staged": "jest --maxWorkers=25% --bail --silent --coverage --coverageReporters=cobertura",
     "test:debug": "jest --no-cache --watch",
-    "test-all": "yarn lint && yarn type-check && yarn test",
+    "test-all": "yarn lint && yarn typecheck && yarn test",
+    "format": "prettier -w src",
+    "format:check": "prettier -c src",
     "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
@@ -86,8 +90,12 @@
     "prettier": "^2.8.8"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0",
+      "prettier -w"
+    ],
+    "**/*.{json,css,scss,md,webmanifest}": [
+      "prettier -w"
     ]
   }
 }
