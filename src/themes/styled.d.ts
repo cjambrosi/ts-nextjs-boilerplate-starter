@@ -12,11 +12,12 @@ interface IColorIntensity {
   strongLight?: string;
 }
 
+// TODO: Remove ignores
 declare module 'styled-components' {
   export interface DefaultTheme {
     id: string;
     name: tThemeName;
-    fonts: {};
+    fonts: any; // eslint-disable-line
     color: {
       black: IColorIntensity;
       white: IColorIntensity;
