@@ -1,0 +1,41 @@
+name: Code Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+concurrency:
+  group: ${{ github.job }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: ESLint, TypeScript, Prettier and Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Download dependencies
+        uses: u0reo/npm-install@fix/restore-failure
+        with:
+          useRollingCache: true
+
+      - name: Lint
+        run: yarn lint:strict
+
+      - name: Type check
+        run: yarn typecheck
+
+      - name: Prettier check
+        run: yarn format:check
+
+      - name: Run jest
+        run: yarn test

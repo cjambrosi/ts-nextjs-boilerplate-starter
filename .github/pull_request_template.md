@@ -7,13 +7,11 @@
 [//]: <> (List the main changes made in this PR. It might be helpful to list important commits here.)
 
 <!--
-
 Example:
 
 - feat: description
 - fix: description
 - docs(readme): description
-
 -->
 
 ## Expected Behavior
@@ -39,7 +37,7 @@ Example:
 
 [//]: <> (Check the items as you complete the PR. This serves as a guide for you and reviewers.)
 
-- [ ] I have read all the [contribution](../CONTRIBUTING.md) requirements.
+- [ ] I have read all the [contribution](https://github.com/cjambrosi/ts-nextjs-boilerplate-starter/blob/main/CONTRIBUTING.md) requirements.
 - [ ] Updated the documentation (if necessary).
 - [ ] Commits follow the [conventional commits](https://www.conventionalcommits.org)
 - [ ] Removed dead code or unnecessary comments.
