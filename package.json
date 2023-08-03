@@ -1,6 +1,6 @@
 {
   "name": "ts-nextjs-boilerplate-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Next.js + Styled Components + TypeScript. Boilerplate packed with useful development features.",
   "author": {
