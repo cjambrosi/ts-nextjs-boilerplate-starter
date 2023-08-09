@@ -22,7 +22,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks", "unused-imports"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "simple-import-sort",
+    "unused-imports"
+  ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
@@ -39,6 +45,39 @@
         "varsIgnorePattern": "^_",
         "args": "after-used",
         "argsIgnorePattern": "^_"
+      }
+    ],
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          // Ext library & side effect imports
+          ["^react$", "^next$", "^@?\\w", "^\\u0000"],
+          // Types, app, libs, locales, and theme
+          ["^@types", "@app", "^@libs", "@locales", "^@themes"],
+          // Contexts, hooks, providers, zustand stores and utils
+          ["^@services", "^@utils"],
+          // Components
+          ["^@components"],
+          // Other imports
+          ["^@"],
+          // Relative paths up until 3 level
+          [
+            "^\\./?$",
+            "^\\.(?!/?$)",
+            "^\\.\\./?$",
+            "^\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\.(?!/?$)",
+            "^\\.\\./\\.\\./\\.\\./?$",
+            "^\\.\\./\\.\\./\\.\\.(?!/?$)"
+          ],
+          // Other that didnt fit in
+          ["^"],
+          // Style files
+          ["^style$", "^.+\\.s?css$"]
+        ]
       }
     ],
     "no-console": [
