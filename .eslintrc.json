@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
@@ -27,7 +28,17 @@
     "@typescript-eslint",
     "react-hooks",
     "simple-import-sort",
-    "unused-imports"
+    "unused-imports",
+    "testing-library"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",

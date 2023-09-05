@@ -8,7 +8,10 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   roots: ['<rootDir>'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/**/$1'
+  },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.tsx'],
   testPathIgnorePatterns: [
     '<rootDir>/cypress/',
     '<rootDir>[/\\\\](node_modules|.next)[/\\\\]'
@@ -18,7 +21,13 @@ const customJestConfig = {
     'node_modules/(?!react-query)/'
   ],
   testEnvironment: 'jest-environment-jsdom',
-  collectCoverageFrom: ['./src/**', '!**/*.d.ts', '!./.next/**'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    './src/**',
+    '!**/*.d.ts',
+    '!./.next/**',
+    '!./src/types/**'
+  ],
   coverageThreshold: {
     global: {
       branches: 0,
