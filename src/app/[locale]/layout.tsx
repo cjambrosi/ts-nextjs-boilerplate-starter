@@ -1,9 +1,10 @@
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
-import { Ii18nLocales, IRootLayoutProps } from '@services/@types/global';
-import { AppProvider } from '@services/providers/AppProvider';
-import { getI18nLocales } from '@utils/getI18nLocales';
+import { Ii18nLocales, IRootLayoutProps } from '@/types/global';
+import { AppProvider } from '@/config/AppProvider';
+
+import { getI18nLocales } from '@/utils/getI18nLocales';
 
 import './globals.css';
 

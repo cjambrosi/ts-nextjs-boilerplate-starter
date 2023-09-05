@@ -16,27 +16,23 @@
     "incremental": true,
     "sourceMap": true,
     "inlineSources": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@app/*": ["app/*"],
-      "@components/*": ["components/*"],
-      "@libs/*": ["libs/*"],
-      "@locales/*": ["locales/*"],
-      "@services/*": ["services/*"],
-      "@themes/*": ["themes/*"],
-      "@utils/*": ["utils/*"],
+      "@/*": ["./src/*"]
     },
     "plugins": [
       {
         "name": "next"
       }
-    ],
+    ]
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts", "**/*.tsx",
     ".next/types/**/*.ts",
-    "./src/services/@types/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./src/types/*.ts",
+    "jest.config.js"
   ],
   "exclude": ["node_modules"]
 }

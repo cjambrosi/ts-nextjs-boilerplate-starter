@@ -1,4 +1,4 @@
-import { getI18nLocales } from '@utils/getI18nLocales';
+import { getI18nLocales } from '@/utils/getI18nLocales';
 
 describe('getI18nLocales', () => {
   const mockLocales = [{ locale: 'pt-br' }, { locale: 'en' }];

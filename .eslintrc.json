@@ -55,13 +55,22 @@
           // Ext library & side effect imports
           ["^react$", "^next$", "^@?\\w", "^\\u0000"],
           // Types, app, libs, locales, and theme
-          ["^@types", "@app", "^@libs", "@locales", "^@themes"],
+          [
+            "^@/app",
+            "^@/types",
+            "^@/services",
+            "^@/store",
+            "^@/contexts",
+            "^@/hooks",
+            "^@/config",
+            "^@/locales"
+          ],
           // Contexts, hooks, providers, zustand stores and utils
-          ["^@services", "^@utils"],
+          ["^@/utils", "^@/themes"],
           // Components
-          ["^@components"],
+          ["^@/components"],
           // Other imports
-          ["^@"],
+          ["^@/"],
           // Relative paths up until 3 level
           [
             "^\\./?$",

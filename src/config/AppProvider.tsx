@@ -4,10 +4,11 @@ import { ReactNode } from 'react';
 import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
 import { ThemeProvider } from 'styled-components';
 
-import StyledComponentsRegistry from '@libs/SCRegistry';
-import { theme } from '@themes/theme';
+import { useBoundStore } from '@/store/useBoundStore';
 
-import { useBoundStore } from '@services/stores/useBoundStore';
+import { theme } from '@/themes/theme';
+
+import StyledComponentsRegistry from './SCRegistry';
 
 interface IAppProvider {
   children: ReactNode;

@@ -1,12 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useBoundStore } from '@services/stores/useBoundStore';
+import { useTranslations } from 'next-intl';
+
+import { tThemeName } from '@/types/styled';
+import { useBoundStore } from '@/store/useBoundStore';
 
 import { Button, CustomLink, MainContainer } from './styles';
-import { tThemeName } from '@themes/styled';
 
 export const ExampleComponent = (): JSX.Element => {
   const t = useTranslations('common');

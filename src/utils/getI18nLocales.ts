@@ -1,4 +1,5 @@
-import { Ii18nLocales } from '@services/@types/global';
+import { Ii18nLocales } from '@/types/global';
+
 import i18nConfig from '../../i18n.config';
 
 export const getI18nLocales = (): Ii18nLocales[] => {
