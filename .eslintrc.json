@@ -28,17 +28,7 @@
     "@typescript-eslint",
     "react-hooks",
     "simple-import-sort",
-    "unused-imports",
-    "testing-library"
-  ],
-  "overrides": [
-    {
-      "files": [
-        "**/__tests__/**/*.[jt]s?(x)",
-        "**/?(*.)+(spec|test).[jt]s?(x)"
-      ],
-      "extends": ["plugin:testing-library/react"]
-    }
+    "unused-imports"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
