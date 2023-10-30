@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/cjambrosi/ts-nextjs-boilerplate-starter/compare/v1.0.1...v1.0.2) (2023-10-30)
+
+
+### Bug Fixes
+
+* **ExampleComponent:** prettier ([af69a34](https://github.com/cjambrosi/ts-nextjs-boilerplate-starter/commit/af69a34234f9908affc1fc7cf405bceab5bd85f6))
+
 ## [1.0.1](https://github.com/cjambrosi/ts-nextjs-boilerplate-starter/compare/v1.0.0...v1.0.1) (2023-08-03)
 
 
