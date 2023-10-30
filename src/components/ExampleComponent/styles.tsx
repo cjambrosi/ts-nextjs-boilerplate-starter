@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import Link from 'next-intl/link';
+import styled from 'styled-components';
 
 export const MainContainer = styled.main`
   display: flex;
@@ -53,7 +53,9 @@ export const MainContainer = styled.main`
     border-radius: var(--border-radius);
     background: rgba(var(--card-rgb), 0);
     border: 1px solid rgba(var(--card-border-rgb), 0);
-    transition: background 200ms, border 200ms;
+    transition:
+      background 200ms,
+      border 200ms;
   }
 
   .card span {
