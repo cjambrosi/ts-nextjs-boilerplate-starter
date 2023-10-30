@@ -1,9 +1,11 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
-import { AppProvider } from '@services/providers/AppProvider';
-import { IRootLayoutProps, Ii18nLocales } from '@services/@types/global';
-import { getI18nLocales } from '@utils/getI18nLocales';
+import { notFound } from 'next/navigation';
+
+import { Ii18nLocales, IRootLayoutProps } from '@/types/global';
+import { AppProvider } from '@/config/AppProvider';
+
+import { getI18nLocales } from '@/utils/getI18nLocales';
+
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -32,9 +34,9 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={localesFile}>
-          <AppProvider>{children}</AppProvider>
-        </NextIntlClientProvider>
+        <AppProvider locale={locale} messages={localesFile}>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

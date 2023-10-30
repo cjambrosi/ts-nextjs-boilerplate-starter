@@ -1,4 +1,5 @@
 import { StateCreator } from 'zustand';
+
 import { IThemeStore } from './theme';
 
 export type IBoundStoreProps = IThemeStore;

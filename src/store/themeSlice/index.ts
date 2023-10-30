@@ -1,6 +1,7 @@
 import { persist } from 'zustand/middleware';
-import { StateSlice } from '@services/@types/zustand';
-import { IThemeStore, eThemeStorage } from '@services/@types/theme';
+
+import { eThemeStorage, IThemeStore } from '@/types/theme.d';
+import { StateSlice } from '@/types/zustand';
 
 export const createThemeSlice: StateSlice<IThemeStore> = persist(
   (set, get) => ({
